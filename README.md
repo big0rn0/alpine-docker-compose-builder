@@ -1,10 +1,10 @@
 # alpine-docker-compose-builder
 Builder for workable single Alpine compatible docker compose binary
-Pet repository to use `--squash` build option and secrets
+Pet repository to use `--squash` build option.
+Gathers some different pieces I found reading Docker issues comments.
 
 # Requirements to build docker images:
-* Docker 1.13+ in swarm mode (run `docker swarm init`)
-    * The build uses `--squash` and also the secrets to publish the release (waiting for build secrets :))
+* Docker 1.13+ because the build uses `--squash`
 
 I wanted to avoid the need to install python and pip to get a minimal `docker-compose` image based on Alpine.
 I gathered informations from open issue on [docker/compose](https://github.com/docker/compose/issues/3465).
