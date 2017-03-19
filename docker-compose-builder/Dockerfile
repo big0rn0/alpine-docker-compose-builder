@@ -19,7 +19,7 @@ WORKDIR /src/dist/
 # Test docker-compose
 RUN set -e && ./docker-compose --version
 
-COPY ./entrypoint.sh /entrypoint.sh
+#COPY ./entrypoint.sh /entrypoint.sh
 
 # https://developer.github.com/v3/repos/releases/#create-a-release
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "echo", "docker-compose", "is built in /src/dist/" ]
